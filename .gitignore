@@ -1,0 +1,8 @@
+*.py[cod]
+
+.vscode
+.DS_Store
+
+*.egg
+dist
+*.egg-info
