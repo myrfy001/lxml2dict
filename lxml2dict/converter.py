@@ -33,6 +33,8 @@ class LxmlEtreeToDictConvert(object):
             current_node, parent_result = stack.pop()
 
             tag = current_node.tag
+            if not isinstance(tag, str):
+                continue
             if current_node.prefix:
                 tag = self._handle_namespace(tag, current_node.prefix)
 
